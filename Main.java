@@ -15,8 +15,15 @@ public class Main {
 
          System.out.println("Enter your choice");
 
-         int choice = input.nextInt();
-
+         int choice;
+       try{
+        choice = input.nextLine();
+       }
+      catch(Exception e) {
+       System.out.println("Invalid input.");
+       input.nextLine();
+       continue;
+      }
          switch(choice) {
              case 1:
                   System.out.println("Enter StId:");
