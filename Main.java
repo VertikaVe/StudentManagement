@@ -17,7 +17,7 @@ public class Main {
 
          int choice;
        try{
-        choice = input.nextLine();
+      choice = Integer.parseInt(input.nextLine());
        }
       catch(Exception e) {
        System.out.println("Invalid input.");
